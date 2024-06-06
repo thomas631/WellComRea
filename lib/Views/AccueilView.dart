@@ -6,18 +6,20 @@ import 'package:well_com_rea/Views/SoignantView.dart';
 class AccueilView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
+        foregroundColor: Colors.white,
         title: const Center(
           child: Text('Page d\'Accueil'),
         ),
         backgroundColor: Colors.green.shade900,
       ),
       body: Container(
-        color: Colors.green.shade200,
         child: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: Wrap(
+            spacing: 10,
+            direction: (size.width <= 700) ? Axis.vertical : Axis.horizontal,
             children: <Widget>[
               ElevatedButton.icon(
                 onPressed: () {
@@ -26,11 +28,11 @@ class AccueilView extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => PatientView()),
                   );
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.person,
                   size: 40, // Ajustez la taille de l'icône ici
                 ), // Ajout de l'icône
-                label: Text(
+                label: const Text(
                   'Espace Patient',
                   style: TextStyle(fontSize: 30),
                 ),
@@ -40,11 +42,11 @@ class AccueilView extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),
-                  minimumSize: Size(350, 250),
+                  minimumSize: const Size(350, 250),
                 ),
               ),
 
-              SizedBox(width: 20), // Espace entre les boutons
+              const SizedBox(width: 20), // Espace entre les boutons
 
               ElevatedButton.icon(
                 onPressed: () {
@@ -53,11 +55,11 @@ class AccueilView extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => SoignantView()),
                   );
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.medical_services,
                   size: 40,
                 ), // Ajout de l'icône
-                label: Text(
+                label: const Text(
                   'Espace Soignant',
                   style: TextStyle(fontSize: 30),
                 ),
@@ -67,7 +69,7 @@ class AccueilView extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),
-                  minimumSize: Size(350, 250),
+                  minimumSize: const Size(350, 250),
                 ),
               ),
             ],
