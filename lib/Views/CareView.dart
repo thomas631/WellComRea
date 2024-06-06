@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class CareView extends StatelessWidget {
-
-
   CareView({Key? key}) : super(key: key);
 
   @override
@@ -42,7 +40,8 @@ class CareView extends StatelessWidget {
               left: 150,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Bien/B1.png', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Bien/B1.png', width: 200, height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Je veux lire ',
@@ -55,7 +54,8 @@ class CareView extends StatelessWidget {
               bottom: 25,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Bien/B7.jpg', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Bien/B7.jpg', width: 200, height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Chargeur',
@@ -69,7 +69,8 @@ class CareView extends StatelessWidget {
               right: 205,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Bien/B8.png', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Bien/B8.png', width: 200, height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Laissez-moi tranquille',
@@ -83,7 +84,8 @@ class CareView extends StatelessWidget {
               left: 360,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Bien/B2.jpg', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Bien/B2.jpg', width: 200, height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Je veux la musique ',
@@ -91,12 +93,14 @@ class CareView extends StatelessWidget {
                   ),
                 ],
               ),
-            ), Positioned(
+            ),
+            Positioned(
               top: 50,
               left: 600,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Bien/B3.png', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Bien/B3.png', width: 200, height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Je veux mes lunettes ',
@@ -110,7 +114,10 @@ class CareView extends StatelessWidget {
               top: 50,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Bien/B11.jpg', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Bien/B11.jpg',
+                      width: 200,
+                      height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Je veux écrire',
@@ -124,7 +131,10 @@ class CareView extends StatelessWidget {
               top: 300,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Bien/B12.png', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Bien/B12.png',
+                      width: 200,
+                      height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Je veux dormir',
@@ -137,7 +147,8 @@ class CareView extends StatelessWidget {
               left: 180,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Bien/B5.jpg', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Bien/B5.jpg', width: 200, height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Je veux la télé',
@@ -151,7 +162,8 @@ class CareView extends StatelessWidget {
               left: 205,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Bien/B6.jpg', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Bien/B6.jpg', width: 200, height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Téléphone',

@@ -6,7 +6,7 @@ class PrelSangView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('PRÉLÈVEMENT SANGUIN'),
+          child: Text('PRÉLÈVEMENT SANGUIN'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,8 +44,10 @@ class PrelSangView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S29.png', height: 200, width: 200),
-                      Image.asset('images/Soignant/S30.png', height: 200, width: 200),
+                      Image.asset('images/Soignant/S29.png',
+                          height: 200, width: 200),
+                      Image.asset('images/Soignant/S30.png',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],
@@ -120,7 +122,6 @@ class PrelSangView extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );

@@ -6,7 +6,7 @@ class CapGasView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text(' CAPILLAIRE GASTRIQUE'),
+          child: Text(' CAPILLAIRE GASTRIQUE'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,8 +44,10 @@ class CapGasView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S46.jpg', height: 200, width: 200),
-                      Image.asset('images/Soignant/S45.png', height: 200, width: 200),
+                      Image.asset('images/Soignant/S46.jpg',
+                          height: 200, width: 200),
+                      Image.asset('images/Soignant/S45.png',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],
@@ -120,7 +122,6 @@ class CapGasView extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );

@@ -6,7 +6,7 @@ class OptiflowView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('OPTIFLOW OU OXYGÉNOTHÉRAPIE À HAUT DÉBIT '),
+          child: Text('OPTIFLOW OU OXYGÉNOTHÉRAPIE À HAUT DÉBIT '),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,7 +44,8 @@ class OptiflowView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S28.png', height: 200, width: 200),
+                      Image.asset('images/Soignant/S28.png',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],

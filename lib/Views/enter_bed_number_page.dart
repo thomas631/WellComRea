@@ -21,8 +21,7 @@ class _EnterBedNumberPageState extends State<EnterBedNumberPage> {
     _patientFuture = Future<Map<String, dynamic>>.value({});
   }*/
 
-
- /* @override
+/* @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

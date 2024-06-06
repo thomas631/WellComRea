@@ -6,7 +6,7 @@ class EcmoView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('ECMO'),
+          child: Text('ECMO'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,8 +44,10 @@ class EcmoView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S13.png', height: 200, width: 200),
-                      Image.asset('images/Soignant/S14.png', height: 200, width: 200),
+                      Image.asset('images/Soignant/S13.png',
+                          height: 200, width: 200),
+                      Image.asset('images/Soignant/S14.png',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],
@@ -121,7 +123,6 @@ class EcmoView extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );

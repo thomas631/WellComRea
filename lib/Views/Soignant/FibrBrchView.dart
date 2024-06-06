@@ -6,7 +6,7 @@ class FibrBrchView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('FIBROSCOPIE BRONCHIQUE '),
+          child: Text('FIBROSCOPIE BRONCHIQUE '),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,7 +44,8 @@ class FibrBrchView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S24.png', height: 200, width: 200),
+                      Image.asset('images/Soignant/S24.png',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],

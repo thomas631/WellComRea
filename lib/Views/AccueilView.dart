@@ -9,7 +9,7 @@ class AccueilView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('Page d\'Accueil'),
+          child: Text('Page d\'Accueil'),
         ),
         backgroundColor: Colors.green.shade900,
       ),
@@ -25,7 +25,6 @@ class AccueilView extends StatelessWidget {
                     context,
                     MaterialPageRoute(builder: (context) => PatientView()),
                   );
-
                 },
                 icon: Icon(
                   Icons.person,
@@ -33,9 +32,11 @@ class AccueilView extends StatelessWidget {
                 ), // Ajout de l'icône
                 label: Text(
                   'Espace Patient',
-                  style: TextStyle(fontSize: 30),),
+                  style: TextStyle(fontSize: 30),
+                ),
                 style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.white, backgroundColor: Colors.green.shade900,
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.green.shade900,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),
@@ -51,17 +52,18 @@ class AccueilView extends StatelessWidget {
                     context,
                     MaterialPageRoute(builder: (context) => SoignantView()),
                   );
-
                 },
                 icon: Icon(
-                    Icons.medical_services,
-                    size: 40,
+                  Icons.medical_services,
+                  size: 40,
                 ), // Ajout de l'icône
                 label: Text(
                   'Espace Soignant',
-                  style: TextStyle(fontSize: 30),),
+                  style: TextStyle(fontSize: 30),
+                ),
                 style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.white, backgroundColor: Colors.green.shade900,
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.green.shade900,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),

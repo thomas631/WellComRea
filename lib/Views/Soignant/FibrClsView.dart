@@ -6,7 +6,7 @@ class FibrClsView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('FIBROSCOPIE COLOSCOPIE'),
+          child: Text('FIBROSCOPIE COLOSCOPIE'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,8 +44,10 @@ class FibrClsView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S6.jpg', height: 200, width: 200),
-                      Image.asset('images/Soignant/S7.jpg', height: 200, width: 200),
+                      Image.asset('images/Soignant/S6.jpg',
+                          height: 200, width: 200),
+                      Image.asset('images/Soignant/S7.jpg',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],

@@ -11,7 +11,7 @@ class Patient {
 
   factory Patient.fromJson(Map<String, dynamic> json) {
     return Patient(
-      id: json['id'] ?? 0,  // Utilisez une valeur par défaut appropriée
+      id: json['id'] ?? 0, // Utilisez une valeur par défaut appropriée
       bedNumber: json['bedNumber'] ?? '',
       needs: List<String>.from(json['needs'] ?? []),
     );

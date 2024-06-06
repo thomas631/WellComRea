@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class PainView extends StatelessWidget {
-
-
   PainView({Key? key}) : super(key: key);
 
   @override
@@ -10,7 +8,7 @@ class PainView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-        child : Text('DOULEURS'),
+          child: Text('DOULEURS'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -57,18 +55,15 @@ class PainView extends StatelessWidget {
                 ImageWidget(
                     imagePath: 'images/Pain/PousseV.png',
                     height: 100,
-                    width: 100
-                ),
+                    width: 100),
                 ImageWidget(
                     imagePath: 'images/Pain/Pousse.png',
                     height: 100,
-                    width: 100
-                ),
+                    width: 100),
                 ImageWidget(
                     imagePath: 'images/Pain/Pinterro.png',
                     height: 100,
-                    width: 100
-                ),
+                    width: 100),
               ],
             ),
           ),
@@ -111,7 +106,8 @@ class PainView extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset('images/Pain/ManProfil.jpg', height: 200, width: 300),
+                Image.asset('images/Pain/ManProfil.jpg',
+                    height: 200, width: 300),
               ],
             ),
           ),
@@ -143,9 +139,7 @@ class PainView extends StatelessWidget {
               children: [
                 // Image en haut de ManDoul
                 ImageWidget(
-                    imagePath: 'images/Pain/P1.jpg',
-                    height: 100,
-                    width: 100),
+                    imagePath: 'images/Pain/P1.jpg', height: 100, width: 100),
                 Text(
                   'J\'ai de piqûres',
                   style: TextStyle(fontWeight: FontWeight.bold),
@@ -161,27 +155,24 @@ class PainView extends StatelessWidget {
                         ImageWidget(
                             imagePath: 'images/Pain/P2.png',
                             height: 200,
-                            width: 100
-                        ),
+                            width: 100),
                         Text(
                           'Oppression / Qui serre',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-
                         ImageWidget(
                             imagePath: 'images/Pain/P3.jpg',
                             height: 200,
-                            width: 100
-                        ),
+                            width: 100),
                         Text(
                           'J\'ai des démangeaisons',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-
                       ],
                     ),
                     // Image ManDoul
-                    Image.asset('images/Pain/ManDoul.jpg', height: 200, width: 300),
+                    Image.asset('images/Pain/ManDoul.jpg',
+                        height: 200, width: 300),
                     // Image à droite de ManDoul
                     Column(
                       children: [
@@ -193,7 +184,6 @@ class PainView extends StatelessWidget {
                           'J\'ai des fourmillements',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-
                         ImageWidget(
                             imagePath: 'images/Pain/P5.jpg',
                             height: 200,
@@ -202,16 +192,13 @@ class PainView extends StatelessWidget {
                           'J\'ai des brûlures',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-
                       ],
                     ),
                   ],
                 ),
                 // Image en bas de ManDoul
                 ImageWidget(
-                    imagePath: 'images/Pain/P6.png',
-                    height: 100,
-                    width: 100),
+                    imagePath: 'images/Pain/P6.png', height: 100, width: 100),
                 Text(
                   'Comme des coups de poignard',
                   style: TextStyle(fontWeight: FontWeight.bold),
@@ -248,35 +235,17 @@ class PainView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ImageWidget(
-                    imagePath: 'images/Pain/D0.jpg',
-                    height: 100,
-                    width: 100
-                ),
+                    imagePath: 'images/Pain/D0.jpg', height: 100, width: 100),
                 ImageWidget(
-                    imagePath: 'images/Pain/D2.jpg',
-                    height: 100,
-                    width: 100
-                ),
+                    imagePath: 'images/Pain/D2.jpg', height: 100, width: 100),
                 ImageWidget(
-                    imagePath: 'images/Pain/D4.jpg',
-                    height: 100,
-                    width: 100
-                ),
+                    imagePath: 'images/Pain/D4.jpg', height: 100, width: 100),
                 ImageWidget(
-                    imagePath: 'images/Pain/D6.jpg',
-                    height: 100,
-                    width: 100
-                ),
+                    imagePath: 'images/Pain/D6.jpg', height: 100, width: 100),
                 ImageWidget(
-                    imagePath: 'images/Pain/D8.jpg',
-                    height: 100,
-                    width: 100
-                ),
+                    imagePath: 'images/Pain/D8.jpg', height: 100, width: 100),
                 ImageWidget(
-                    imagePath: 'images/Pain/D10.jpg',
-                    height: 100,
-                    width: 100
-                ),
+                    imagePath: 'images/Pain/D10.jpg', height: 100, width: 100),
               ],
             ),
           ),

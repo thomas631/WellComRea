@@ -3,8 +3,6 @@ import 'package:video_player/video_player.dart';
 import 'package:well_com_rea/Controllers/patient_controller.dart';
 
 class InstalView extends StatefulWidget {
-
-
   InstalView({Key? key}) : super(key: key);
 
   @override
@@ -17,12 +15,13 @@ class _InstalViewState extends State<InstalView> {
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset('images/Installation/mise-au-fauteuil.mp4')
-      ..initialize().then((_) {
-        if (mounted) {
-          setState(() {});
-        }
-      });
+    _controller =
+        VideoPlayerController.asset('images/Installation/mise-au-fauteuil.mp4')
+          ..initialize().then((_) {
+            if (mounted) {
+              setState(() {});
+            }
+          });
   }
 
   @override
@@ -84,7 +83,6 @@ class _InstalViewState extends State<InstalView> {
                     height: 300,
                     width: 200,
                     labelText: 'Attacher les mains',
-
                   ),
                 ],
               ),
@@ -118,30 +116,27 @@ class _InstalViewState extends State<InstalView> {
                 children: [
                   _controller.value.isInitialized
                       ? AspectRatio(
-                    aspectRatio: _controller.value.aspectRatio,
-                    child: VideoPlayer(_controller),
-                  )
+                          aspectRatio: _controller.value.aspectRatio,
+                          child: VideoPlayer(_controller),
+                        )
                       : Container(),
                   ImageWidget(
                     imagePath: 'images/Installation/I2.png',
                     height: 300,
                     width: 300,
                     labelText: 'Mise au fauteuil',
-
                   ),
                   ImageWidget(
                     imagePath: 'images/Installation/I3.png',
                     height: 300,
                     width: 300,
                     labelText: 'Mise au fauteuil',
-
                   ),
                   ImageWidget(
                     imagePath: 'images/Installation/I4.png',
                     height: 300,
                     width: 300,
                     labelText: 'Mise au fauteuil',
-
                   ),
                   ImageWidget(
                     imagePath: 'images/Installation/I5.png',
@@ -159,30 +154,27 @@ class _InstalViewState extends State<InstalView> {
                 children: [
                   _controller.value.isInitialized
                       ? AspectRatio(
-                    aspectRatio: _controller.value.aspectRatio,
-                    child: VideoPlayer(_controller),
-                  )
+                          aspectRatio: _controller.value.aspectRatio,
+                          child: VideoPlayer(_controller),
+                        )
                       : Container(),
                   ImageWidget(
                     imagePath: 'images/Installation/I6.png',
                     height: 300,
                     width: 300,
                     labelText: 'Mise au fauteuil',
-
                   ),
                   ImageWidget(
                     imagePath: 'images/Installation/I7.png',
                     height: 300,
                     width: 300,
                     labelText: 'Mise au fauteuil',
-
                   ),
                   ImageWidget(
                     imagePath: 'images/Installation/I8.png',
                     height: 300,
                     width: 300,
                     labelText: 'Mise au fauteuil',
-
                   ),
                   ImageWidget(
                     imagePath: 'images/Installation/I9.png',
@@ -222,16 +214,15 @@ class _InstalViewState extends State<InstalView> {
                 children: [
                   _controller.value.isInitialized
                       ? AspectRatio(
-                    aspectRatio: _controller.value.aspectRatio,
-                    child: VideoPlayer(_controller),
-                  )
+                          aspectRatio: _controller.value.aspectRatio,
+                          child: VideoPlayer(_controller),
+                        )
                       : Container(),
                   ImageWidget(
                     imagePath: 'images/Installation/I10.png',
                     height: 300,
                     width: 300,
                     labelText: '',
-
                   ),
                 ],
               ),
@@ -265,25 +256,22 @@ class _InstalViewState extends State<InstalView> {
                 children: [
                   _controller.value.isInitialized
                       ? AspectRatio(
-                    aspectRatio: _controller.value.aspectRatio,
-                    child: VideoPlayer(_controller),
-                  )
+                          aspectRatio: _controller.value.aspectRatio,
+                          child: VideoPlayer(_controller),
+                        )
                       : Container(),
                   ImageWidget(
                     imagePath: 'images/Installation/I11.png',
                     height: 300,
                     width: 300,
                     labelText: 'Mise au fauteuil',
-
                   ),
                   ImageWidget(
                     imagePath: 'images/Installation/I12.png',
                     height: 300,
                     width: 300,
                     labelText: 'Mise au fauteuil',
-
                   ),
-
                 ],
               ),
             ),
@@ -316,30 +304,27 @@ class _InstalViewState extends State<InstalView> {
                 children: [
                   _controller.value.isInitialized
                       ? AspectRatio(
-                    aspectRatio: _controller.value.aspectRatio,
-                    child: VideoPlayer(_controller),
-                  )
+                          aspectRatio: _controller.value.aspectRatio,
+                          child: VideoPlayer(_controller),
+                        )
                       : Container(),
                   ImageWidget(
                     imagePath: 'images/Installation/I13.png',
                     height: 300,
                     width: 300,
                     labelText: '',
-
                   ),
                   ImageWidget(
                     imagePath: 'images/Installation/I14.png',
                     height: 300,
                     width: 300,
                     labelText: '',
-
                   ),
                   ImageWidget(
                     imagePath: 'images/Installation/I15.png',
                     height: 300,
                     width: 300,
                     labelText: '',
-
                   ),
                   ImageWidget(
                     imagePath: 'images/Installation/I16.png',
@@ -350,7 +335,6 @@ class _InstalViewState extends State<InstalView> {
                 ],
               ),
             ),
-
             Container(
               margin: EdgeInsets.all(10),
               decoration: BoxDecoration(
@@ -380,16 +364,15 @@ class _InstalViewState extends State<InstalView> {
                 children: [
                   _controller.value.isInitialized
                       ? AspectRatio(
-                    aspectRatio: _controller.value.aspectRatio,
-                    child: VideoPlayer(_controller),
-                  )
+                          aspectRatio: _controller.value.aspectRatio,
+                          child: VideoPlayer(_controller),
+                        )
                       : Container(),
                   ImageWidget(
                     imagePath: 'images/Installation/I17.png',
                     height: 300,
                     width: 300,
                     labelText: '',
-
                   ),
                   ImageWidget(
                     imagePath: 'images/Installation/I18.png',
@@ -413,13 +396,11 @@ class ImageWidget extends StatefulWidget {
   final double height;
   final String labelText;
 
-
   ImageWidget({
     required this.imagePath,
     this.width = 50,
     this.height = 50,
     required this.labelText,
-
   });
 
   @override
@@ -456,7 +437,6 @@ class _ImageWidgetState extends State<ImageWidget> {
           print('Erreur lors de l\'enregistrement du besoin dans la base de données: $error');
         }*/
       },
-
       child: Container(
         decoration: BoxDecoration(
           border: isPressed

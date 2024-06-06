@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:well_com_rea/Controllers/patient_controller.dart';
 
 class DiscomfortView extends StatelessWidget {
-
-
   DiscomfortView({Key? key}) : super(key: key);
 
   @override
@@ -33,7 +31,7 @@ class DiscomfortView extends StatelessWidget {
               children: [
                 Positioned(
                   top: 290,
-                 left: 530,
+                  left: 530,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(30),
                     child: Image.asset(
@@ -43,97 +41,93 @@ class DiscomfortView extends StatelessWidget {
                     ),
                   ),
                 ),
-
                 Positioned(
                   top: 30,
                   left: 250,
                   child: RoundedImageWidget(
-                      imagePath: 'images/Discomfort/Dis1.png',
-                      width: 200,
-                      height: 150,
+                    imagePath: 'images/Discomfort/Dis1.png',
+                    width: 200,
+                    height: 150,
                     labelText: 'J\’ai Froid',
-                    ),
                   ),
+                ),
                 Positioned(
                   top: 30,
                   left: 80,
                   child: RoundedImageWidget(
-                      imagePath: 'images/Discomfort/Dis2.png',
-                      width: 200,
-                      height: 150,
+                    imagePath: 'images/Discomfort/Dis2.png',
+                    width: 200,
+                    height: 150,
                     labelText: 'J\’ai chaud',
-                    ),
                   ),
-
+                ),
                 Positioned(
                   top: 30,
                   left: 420,
                   child: RoundedImageWidget(
-                      imagePath: 'images/Discomfort/Dis3.jpg',
-                      width: 200,
-                      height: 150,
+                    imagePath: 'images/Discomfort/Dis3.jpg',
+                    width: 200,
+                    height: 150,
                     labelText: 'J\’ai soif',
-                    ),
                   ),
+                ),
                 Positioned(
                   top: 30,
                   left: 570,
                   child: RoundedImageWidget(
-                      imagePath: 'images/Discomfort/Dis3.png',
-                      width: 200,
-                      height: 150,
+                    imagePath: 'images/Discomfort/Dis3.png',
+                    width: 200,
+                    height: 150,
                     labelText: 'Trop de bruit',
-                    ),
                   ),
+                ),
                 Positioned(
                   bottom: 50,
                   left: 570,
                   child: RoundedImageWidget(
-                      imagePath: 'images/Discomfort/Dis13.jpg',
-                      width: 200,
-                      height: 150,
+                    imagePath: 'images/Discomfort/Dis13.jpg',
+                    width: 200,
+                    height: 150,
                     labelText: 'Je suis fatigué',
-                    ),
                   ),
+                ),
                 Positioned(
                   top: 30,
                   left: 720,
                   child: RoundedImageWidget(
-                      imagePath: 'images/Discomfort/Dis4.png',
-                      width: 200,
-                      height: 150,
+                    imagePath: 'images/Discomfort/Dis4.png',
+                    width: 200,
+                    height: 150,
                     labelText: 'Trop de lumière',
-                    ),
                   ),
+                ),
                 Positioned(
                   bottom: 50,
                   left: 720,
                   child: RoundedImageWidget(
-                      imagePath: 'images/Discomfort/Dis10.png',
-                      width: 200,
-                      height: 150,
+                    imagePath: 'images/Discomfort/Dis10.png',
+                    width: 200,
+                    height: 150,
                     labelText: 'Je suis Triste',
-                    ),
                   ),
+                ),
                 Positioned(
                   top: 30,
                   left: 920,
                   child: RoundedImageWidget(
-                      imagePath: 'images/Discomfort/Dis13.png',
-                      width: 200,
-                      height: 150,
+                    imagePath: 'images/Discomfort/Dis13.png',
+                    width: 200,
+                    height: 150,
                     labelText: 'J\'ai fait un cauchemar',
-                    ),
                   ),
-
-
+                ),
                 Positioned(
                   top: 220,
                   left: 920,
                   child: RoundedImageWidget(
-                      imagePath: 'images/Discomfort/Dis14.jpg',
-                      width: 200,
-                      height: 150,
+                    imagePath: 'images/Discomfort/Dis14.jpg',
+                    width: 200,
+                    height: 150,
                     labelText: 'J\'ai une insomnie',
                   ),
                 ),
@@ -141,9 +135,9 @@ class DiscomfortView extends StatelessWidget {
                   top: 410,
                   left: 920,
                   child: RoundedImageWidget(
-                      imagePath: 'images/Discomfort/Dis12.png',
-                      width: 200,
-                      height: 150,
+                    imagePath: 'images/Discomfort/Dis12.png',
+                    width: 200,
+                    height: 150,
                     labelText: 'Je Stress',
                   ),
                 ),
@@ -152,8 +146,8 @@ class DiscomfortView extends StatelessWidget {
                   top: 610,
                   child: RoundedImageWidget(
                     imagePath: 'images/Discomfort/Dis9.png',
-                      width: 200,
-                      height: 150,
+                    width: 200,
+                    height: 150,
                     labelText: 'Je ne veux pas\nNON',
                   ),
                 ),
@@ -162,23 +156,21 @@ class DiscomfortView extends StatelessWidget {
                   left: 250,
                   child: RoundedImageWidget(
                     imagePath: 'images/Discomfort/Dis8.jpg',
-                      width: 200,
-                      height: 150,
+                    width: 200,
+                    height: 150,
                     labelText: 'J\'étouffe',
                   ),
                 ),
-
                 Positioned(
                   right: 180,
                   bottom: -200,
                   child: RoundedImageWidget(
                     imagePath: 'images/Discomfort/Dis9.png',
-                      width: 200,
-                      height: 150,
+                    width: 200,
+                    height: 150,
                     labelText: 'Je ne veux pas',
                   ),
                 ),
-
                 Positioned(
                   left: 80,
                   top: 610,
@@ -189,15 +181,13 @@ class DiscomfortView extends StatelessWidget {
                     labelText: 'Je me sens opressé',
                   ),
                 ),
-
-
                 Positioned(
                   top: 220,
                   left: 80,
                   child: RoundedImageWidget(
                     imagePath: 'images/Discomfort/Dis6.jpg',
-                      width: 200,
-                      height: 150,
+                    width: 200,
+                    height: 150,
                     labelText: 'Nausée',
                   ),
                 ),
@@ -206,8 +196,8 @@ class DiscomfortView extends StatelessWidget {
                   left: 80,
                   child: RoundedImageWidget(
                     imagePath: 'images/Discomfort/Dis7.png',
-                      width: 200,
-                      height: 150,
+                    width: 200,
+                    height: 150,
                     labelText: 'Tête qui tourne',
                   ),
                 ),
@@ -216,8 +206,8 @@ class DiscomfortView extends StatelessWidget {
                   left: 420,
                   child: RoundedImageWidget(
                     imagePath: 'images/Discomfort/Dis8.png',
-                      width: 200,
-                      height: 150,
+                    width: 200,
+                    height: 150,
                     labelText: 'Colère',
                   ),
                 ),
@@ -235,7 +225,6 @@ class RoundedImageWidget extends StatelessWidget {
   final double width;
   final double height;
   final String labelText;
-
 
   RoundedImageWidget({
     required this.imagePath,
@@ -298,14 +287,13 @@ class _ImageWidgetState extends State<ImageWidget> {
         print(need);
 
         // Enregistrez le besoin dans la base de données
-       /* try {
+        /* try {
           await PatientController.addNeedsToPatient(widget.bedNumber, [need]);
           print('Besoin enregistré avec succès dans la base de données.');
         } catch (error) {
           print('Erreur lors de l\'enregistrement du besoin dans la base de données: $error');
         }*/
       },
-
       child: Container(
         decoration: BoxDecoration(
           border: isPressed
@@ -330,4 +318,3 @@ class _ImageWidgetState extends State<ImageWidget> {
     );
   }
 }
-

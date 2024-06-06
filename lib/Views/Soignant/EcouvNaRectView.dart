@@ -6,7 +6,7 @@ class EcouvNaRectView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('ÉCOUVILLON NASAL OU  RECTAL'),
+          child: Text('ÉCOUVILLON NASAL OU  RECTAL'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,8 +44,10 @@ class EcouvNaRectView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S36.png', height: 200, width: 200),
-                      Image.asset('images/Soignant/S37.png', height: 200, width: 200),
+                      Image.asset('images/Soignant/S36.png',
+                          height: 200, width: 200),
+                      Image.asset('images/Soignant/S37.png',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],
@@ -121,7 +123,6 @@ class EcouvNaRectView extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );

@@ -3,7 +3,6 @@ import 'package:well_com_rea/views/FirstPageView.dart';
 import 'package:well_com_rea/views/PrimoView.dart';
 import 'package:well_com_rea/models/HospitalData.dart';
 
-
 class FirstPageController {
   final HospitalData data;
 
