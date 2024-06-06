@@ -69,6 +69,7 @@ class PatientView extends StatelessWidget {
               child: GridView.builder(
                   itemCount: menuItems.length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    childAspectRatio: 6 / 4,
                     crossAxisCount: (size.width >= 824)
                         ? 3
                         : (size.width <= tablet)
