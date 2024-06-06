@@ -11,6 +11,7 @@ class FirstPageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    const tablet = 500;
     return Scaffold(
       appBar: AppBar(
         toolbarTextStyle: const TextStyle(
@@ -54,8 +55,9 @@ class FirstPageView extends StatelessWidget {
               Flexible(
                 child: Text(
                   data.welcomeMessage,
-                  style: const TextStyle(
-                      fontSize: 30, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: (size.width <= tablet) ? size.width * 0.06 : 30,
+                      fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
               ),
