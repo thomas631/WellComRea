@@ -49,7 +49,7 @@ class FirstPageView extends StatelessWidget {
           height: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Flexible(
                 child: Text(
@@ -67,29 +67,36 @@ class FirstPageView extends StatelessWidget {
                 height: 300,
                 width: 600,
               ),
-              SizedBox(
+              Container(
+                constraints: const BoxConstraints(minHeight: 10),
                 height: size.height * 0.002,
               ),
-              FittedBox(
-                child: Text(
-                  'Heure : ${DateFormat('HH:mm dd/MM/yyyy').format(DateTime.now().toLocal())}',
-                  style: const TextStyle(
-                      fontSize: 25, fontWeight: FontWeight.w400),
-                ),
-              ),
-              const SizedBox(height: 10),
-              FittedBox(
-                child: Text(
-                  'Pays : ${data.country}',
-                  style: const TextStyle(
-                      fontSize: 25, fontWeight: FontWeight.w400),
-                ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  FittedBox(
+                    child: Text(
+                      'Heure : ${DateFormat('HH:mm dd/MM/yyyy').format(DateTime.now().toLocal())}',
+                      style: const TextStyle(
+                          fontSize: 25, fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  FittedBox(
+                    child: Text(
+                      'Pays : ${data.country}',
+                      style: const TextStyle(
+                          fontSize: 25, fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                ],
               ),
               SizedBox(height: size.height * 0.08),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(
+                  Container(
+                    constraints: const BoxConstraints(maxWidth: 200),
                     height: 40,
                     width: size.width * 0.5,
                     child: ElevatedButton(
