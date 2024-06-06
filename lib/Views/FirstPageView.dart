@@ -68,7 +68,7 @@ class FirstPageView extends StatelessWidget {
                 width: 600,
               ),
               Container(
-                constraints: BoxConstraints(minHeight: 10),
+                constraints: const BoxConstraints(minHeight: 10),
                 height: size.height * 0.002,
               ),
               Column(
