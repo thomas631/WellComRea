@@ -12,7 +12,10 @@ class PainView extends StatelessWidget {
       appBar: AppBar(
         foregroundColor: Colors.white,
         title: const Center(
-          child: Text('DOULEURS' ,style: TextStyle(fontSize: 15),),
+          child: Text(
+            'DOULEURS',
+            style: TextStyle(fontSize: 15),
+          ),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [

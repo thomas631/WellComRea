@@ -6,7 +6,6 @@ import 'package:well_com_rea/Views/CareView.dart';
 import 'package:well_com_rea/Views/RemovalView.dart';
 import 'package:well_com_rea/Views/PainView.dart';
 import 'package:well_com_rea/Views/InstalView.dart';
-import 'package:well_com_rea/Models/patient_model.dart';
 
 class PatientView extends StatelessWidget {
   PatientView({Key? key}) : super(key: key);

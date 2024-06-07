@@ -34,6 +34,7 @@ class _InstalViewState extends State<InstalView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        foregroundColor: Colors.white,
         title: const Center(
           child: Text('INSTALLATION/MOBILISATION'),
         ),

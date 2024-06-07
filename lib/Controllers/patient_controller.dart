@@ -3,7 +3,6 @@ import 'package:http/http.dart' as http;
 import 'package:well_com_rea/Models/patient_model.dart';
 
 class PatientController {
-
   static Future<Map<String, dynamic>> createPatient(String bedNumber) async {
     final url = Uri.parse('http://10.77.2.226:3000/api/patients');
     final response = await http.post(
@@ -17,13 +16,15 @@ class PatientController {
     } else {
       print('Failed to create patient. Status code: ${response.statusCode}');
       print('Response body: ${response.body}');
-      throw Exception('Failed to create patient. Status code: ${response.statusCode}');
+      throw Exception(
+          'Failed to create patient. Status code: ${response.statusCode}');
     }
   }
 
   static Future<Patient?> getPatientByBedNumber(String bedNumber) async {
     try {
-      final url = Uri.parse('http://10.77.2.226:3000/api/patients/bedNumber/$bedNumber');
+      final url = Uri.parse(
+          'http://10.77.2.226:3000/api/patients/bedNumber/$bedNumber');
       print('Getting patient with bed number: $bedNumber');
       print('URL: $url');
       final response = await http.get(url);
@@ -36,7 +37,8 @@ class PatientController {
         // Le patient n'a pas été trouvé avec le numéro de lit donné
         return null;
       } else {
-        throw Exception('Failed to get patient by bed number. Status code: ${response.statusCode}');
+        throw Exception(
+            'Failed to get patient by bed number. Status code: ${response.statusCode}');
       }
     } catch (error) {
       print('Error getting patient by bed number: $error');
@@ -44,14 +46,16 @@ class PatientController {
     }
   }
 
-  static Future<void> addNeedsToPatient(String bedNumber, List<String> needs) async {
+  static Future<void> addNeedsToPatient(
+      String bedNumber, List<String> needs) async {
     try {
       // Récupérer le patient en fonction du numéro de lit
       final patient = await getPatientByBedNumber(bedNumber);
 
       // Vérifier si le patient existe
       if (patient != null) {
-        final url = Uri.parse('http://10.77.2.226:3000/api/patients/$bedNumber/needs');
+        final url =
+            Uri.parse('http://10.77.2.226:3000/api/patients/$bedNumber/needs');
         print('URL: $url');
         final response = await http.post(
           url,
@@ -60,9 +64,11 @@ class PatientController {
         );
 
         if (response.statusCode != 200) {
-          print('Échec de la mise à jour des besoins du patient. Code d\'état : ${response.statusCode}');
+          print(
+              'Échec de la mise à jour des besoins du patient. Code d\'état : ${response.statusCode}');
           print('Corps de la réponse : ${response.body}');
-          throw Exception('Échec de la mise à jour des besoins du patient. Code d\'état : ${response.statusCode}');
+          throw Exception(
+              'Échec de la mise à jour des besoins du patient. Code d\'état : ${response.statusCode}');
         }
       } else {
         throw Exception('Patient not found with bed number: $bedNumber');
