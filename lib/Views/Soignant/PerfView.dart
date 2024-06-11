@@ -6,7 +6,7 @@ class PerfView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('PERFUSION'),
+          child: Text('PERFUSION'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,7 +44,8 @@ class PerfView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S25.png', height: 200, width: 200),
+                      Image.asset('images/Soignant/S25.png',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],
@@ -118,7 +119,6 @@ class PerfView extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );
