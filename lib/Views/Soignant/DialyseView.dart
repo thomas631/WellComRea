@@ -6,7 +6,7 @@ class DialyseView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('DIALYSE'),
+          child: Text('DIALYSE'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,8 +44,10 @@ class DialyseView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S36.jpg', height: 200, width: 200),
-                      Image.asset('images/Soignant/S35.png', height: 200, width: 200),
+                      Image.asset('images/Soignant/S36.jpg',
+                          height: 200, width: 200),
+                      Image.asset('images/Soignant/S35.png',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],
@@ -120,7 +122,6 @@ class DialyseView extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );
