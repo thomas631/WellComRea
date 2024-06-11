@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:well_com_rea/views/FirstPageView.dart';
 import 'package:well_com_rea/models/HospitalData.dart';
-class PrimoView extends StatelessWidget {
 
+class PrimoView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     HospitalData hospitalData = HospitalData(
@@ -16,7 +16,8 @@ class PrimoView extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => FirstPageView(data: hospitalData), // Passer les données à FirstPageView
+            builder: (context) => FirstPageView(
+                data: hospitalData), // Passer les données à FirstPageView
           ),
         );
       },

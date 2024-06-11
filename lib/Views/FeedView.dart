@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:well_com_rea/Controllers/patient_controller.dart';
 
 class FeedView extends StatelessWidget {
-
   FeedView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        foregroundColor: Colors.white,
         title: const Center(
           child: Text('ALIMENTATION'),
         ),
@@ -40,7 +40,6 @@ class FeedView extends StatelessWidget {
             Positioned(
               top: 50,
               left: 420,
-
               child: RoundedImageWidget(
                 imagePath: 'images/Feed/Alim.png',
                 width: 200,
@@ -56,7 +55,6 @@ class FeedView extends StatelessWidget {
                 width: 200,
                 height: 150,
                 labelText: 'Je voudrais du Sucre',
-
               ),
             ),
             Positioned(
@@ -66,7 +64,6 @@ class FeedView extends StatelessWidget {
                 width: 200,
                 height: 150,
                 labelText: 'Du sel',
-
               ),
             ),
             Positioned(
@@ -76,7 +73,6 @@ class FeedView extends StatelessWidget {
                 width: 200,
                 height: 150,
                 labelText: 'Du Café',
-
               ),
             ),
             Positioned(
@@ -87,7 +83,6 @@ class FeedView extends StatelessWidget {
                 width: 200,
                 height: 150,
                 labelText: 'Du Thé',
-
               ),
             ),
             Positioned(
@@ -98,7 +93,6 @@ class FeedView extends StatelessWidget {
                 width: 200,
                 height: 150,
                 labelText: 'J\'ai faim',
-
               ),
             ),
           ],
@@ -114,13 +108,11 @@ class RoundedImageWidget extends StatelessWidget {
   final double height;
   final String labelText;
 
-
   RoundedImageWidget({
     required this.imagePath,
     this.width = 50,
     this.height = 50,
     required this.labelText,
-
   });
 
   @override
@@ -132,7 +124,6 @@ class RoundedImageWidget extends StatelessWidget {
         width: width,
         height: height,
         labelText: labelText,
-
       ),
     );
   }
@@ -144,13 +135,11 @@ class ImageWidget extends StatefulWidget {
   final double height;
   final String labelText;
 
-
   ImageWidget({
     required this.imagePath,
     this.width = 50,
     this.height = 50,
     required this.labelText,
-
   });
 
   @override
@@ -187,7 +176,6 @@ class _ImageWidgetState extends State<ImageWidget> {
           print('Erreur lors de l\'enregistrement du besoin dans la base de données: $error');
         }*/
       },
-
       child: Container(
         decoration: BoxDecoration(
           border: isPressed

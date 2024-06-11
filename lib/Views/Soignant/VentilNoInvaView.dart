@@ -6,7 +6,7 @@ class VentilNoInvaView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('VENTILATION NON INVASIVE'),
+          child: Text('VENTILATION NON INVASIVE'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,8 +44,10 @@ class VentilNoInvaView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S26.png', height: 200, width: 200),
-                      Image.asset('images/Soignant/S27.png', height: 200, width: 200),
+                      Image.asset('images/Soignant/S26.png',
+                          height: 200, width: 200),
+                      Image.asset('images/Soignant/S27.png',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],
@@ -120,7 +122,6 @@ class VentilNoInvaView extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );

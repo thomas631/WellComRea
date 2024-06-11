@@ -6,7 +6,7 @@ class SndNasogView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('SONDE NASOGASTRIQUE'),
+          child: Text('SONDE NASOGASTRIQUE'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,8 +44,10 @@ class SndNasogView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S43.png', height: 200, width: 200),
-                      Image.asset('images/Soignant/S44.png', height: 200, width: 200),
+                      Image.asset('images/Soignant/S43.png',
+                          height: 200, width: 200),
+                      Image.asset('images/Soignant/S44.png',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],
@@ -120,7 +122,6 @@ class SndNasogView extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );

@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
 class RemovalView extends StatelessWidget {
-
-
   RemovalView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        foregroundColor: Colors.white,
         title: const Center(
           child: Text('ELIMINATION'),
         ),
@@ -42,7 +41,10 @@ class RemovalView extends StatelessWidget {
               left: 420,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Douche/D1.jpg', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Douche/D1.jpg',
+                      width: 200,
+                      height: 150),
                   SizedBox(height: 20),
                   Text(
                     'Je veux uriner ',
@@ -55,7 +57,10 @@ class RemovalView extends StatelessWidget {
               left: 180,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Douche/D2.jpg', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Douche/D2.jpg',
+                      width: 200,
+                      height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Les toilettes ',
@@ -63,12 +68,16 @@ class RemovalView extends StatelessWidget {
                   ),
                 ],
               ),
-            ), Positioned(
+            ),
+            Positioned(
               left: 400,
               bottom: 70,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Douche/D3.jpg', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Douche/D3.jpg',
+                      width: 200,
+                      height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Le pistolet ',
@@ -76,12 +85,16 @@ class RemovalView extends StatelessWidget {
                   ),
                 ],
               ),
-            ), Positioned(
+            ),
+            Positioned(
               right: 400,
               bottom: 70,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Douche/D4.png', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Douche/D4.png',
+                      width: 200,
+                      height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Le bassin ',
@@ -94,7 +107,10 @@ class RemovalView extends StatelessWidget {
               right: 180,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Douche/D5.jpg', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Douche/D5.jpg',
+                      width: 200,
+                      height: 150),
                   SizedBox(height: 10),
                   Text(
                     'La chaise-pot ',
@@ -108,7 +124,10 @@ class RemovalView extends StatelessWidget {
               left: 720,
               child: Column(
                 children: [
-                  ImageWidget(imagePath: 'images/Douche/D6.png', width: 200, height: 150),
+                  ImageWidget(
+                      imagePath: 'images/Douche/D6.png',
+                      width: 200,
+                      height: 150),
                   SizedBox(height: 10),
                   Text(
                     'Je veux aller à la selle',

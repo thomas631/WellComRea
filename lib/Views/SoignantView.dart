@@ -82,14 +82,16 @@ class _SoignantViewState extends State<SoignantView> {
               ElevatedButton(
                 onPressed: () {
                   _pageController.animateToPage(0,
-                      duration: Duration(milliseconds: 500), curve: Curves.easeInOut);
+                      duration: Duration(milliseconds: 500),
+                      curve: Curves.easeInOut);
                 },
                 child: Text('Page 1'),
               ),
               ElevatedButton(
                 onPressed: () {
                   _pageController.animateToPage(1,
-                      duration: Duration(milliseconds: 500), curve: Curves.easeInOut);
+                      duration: Duration(milliseconds: 500),
+                      curve: Curves.easeInOut);
                 },
                 child: Text('Page 2'),
               ),
@@ -121,34 +123,41 @@ class _SoignantViewState extends State<SoignantView> {
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'INTUBATION',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade900,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade900,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     minimumSize: Size(180, 180),
                   ),
-                ),ElevatedButton.icon(
+                ),
+                ElevatedButton.icon(
                   onPressed: () {
                     // Action lorsque le bouton est pressé
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => TracheotomieView()),
+                      MaterialPageRoute(
+                          builder: (context) => TracheotomieView()),
                     );
                   },
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'TRACHÉOTOMIE',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade900,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade900,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     minimumSize: Size(180, 180),
                   ),
-                ),ElevatedButton.icon(
+                ),
+                ElevatedButton.icon(
                   onPressed: () {
                     // Action lorsque le bouton est pressé
                     Navigator.push(
@@ -159,31 +168,35 @@ class _SoignantViewState extends State<SoignantView> {
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: const Center(
                     child: Text(
-                    'VENTILATION\nARTIFICIELLE',
-                    style: TextStyle(fontSize: 15),),
+                      'VENTILATION\nARTIFICIELLE',
+                      style: TextStyle(fontSize: 15),
+                    ),
                   ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade900,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade900,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     minimumSize: Size(180, 180),
                   ),
-                ),ElevatedButton.icon(
+                ),
+                ElevatedButton.icon(
                   onPressed: () {
                     // Action lorsque le bouton est pressé
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => FibrClsView()),
                     );
-
                   },
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'FIBROSCOPIE\nCOLOSCOPIE',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade900,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade900,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
@@ -201,9 +214,11 @@ class _SoignantViewState extends State<SoignantView> {
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'FIBROSCOPIE\nBRONCHIQUE',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade800,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade800,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
@@ -216,7 +231,6 @@ class _SoignantViewState extends State<SoignantView> {
                       context,
                       MaterialPageRoute(builder: (context) => PonctLombView()),
                     );
-
                   },
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
@@ -224,7 +238,8 @@ class _SoignantViewState extends State<SoignantView> {
                     style: TextStyle(fontSize: 15),
                   ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade700,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade700,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
@@ -243,7 +258,6 @@ class _SoignantViewState extends State<SoignantView> {
                       context,
                       MaterialPageRoute(builder: (context) => EcmoView()),
                     );
-
                   },
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
@@ -251,7 +265,8 @@ class _SoignantViewState extends State<SoignantView> {
                     style: TextStyle(fontSize: 15),
                   ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade600,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade600,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
@@ -268,15 +283,18 @@ class _SoignantViewState extends State<SoignantView> {
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'DRAIN\nTHORACIQUE ',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade400,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade400,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     minimumSize: Size(180, 180),
                   ),
-                ),ElevatedButton.icon(
+                ),
+                ElevatedButton.icon(
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -286,15 +304,18 @@ class _SoignantViewState extends State<SoignantView> {
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'SONDE\nURINAIRE',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade400,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade400,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     minimumSize: Size(180, 180),
                   ),
-                ),ElevatedButton.icon(
+                ),
+                ElevatedButton.icon(
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -304,15 +325,18 @@ class _SoignantViewState extends State<SoignantView> {
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'ÉCHOGRAPHIE\nCARDIAQUE',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade400,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade400,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     minimumSize: Size(180, 180),
                   ),
-                ),ElevatedButton.icon(
+                ),
+                ElevatedButton.icon(
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -322,15 +346,18 @@ class _SoignantViewState extends State<SoignantView> {
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'RADIOLOGIE',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade400,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade400,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     minimumSize: Size(180, 180),
                   ),
-                ),ElevatedButton.icon(
+                ),
+                ElevatedButton.icon(
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -340,9 +367,11 @@ class _SoignantViewState extends State<SoignantView> {
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'PERFUSION',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade400,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade400,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
@@ -371,23 +400,24 @@ class _SoignantViewState extends State<SoignantView> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => VentilNoInvaView()),
+                      MaterialPageRoute(
+                          builder: (context) => VentilNoInvaView()),
                     );
-
                   },
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'VENTILATION\nNON INVASIVE',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade900,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade900,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     minimumSize: Size(180, 180),
                   ),
                 ),
-
                 ElevatedButton.icon(
                   onPressed: () {
                     // Action lorsque le bouton est pressé
@@ -395,57 +425,59 @@ class _SoignantViewState extends State<SoignantView> {
                       context,
                       MaterialPageRoute(builder: (context) => AOTView()),
                     );
-
                   },
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'ASPIRATIONS\nORO-TRACHEALES',
-                    style: TextStyle(fontSize: 15),),
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade900,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20.0),
-                    ),
-                    minimumSize: Size(180, 180),
-                  ),
-                ),ElevatedButton.icon(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => OptiflowView()),
-                    );
-
-                  },
-                  icon: Icon(Icons.medical_services), // Ajout de l'icône
-                  label: const Center(
-                    child :Text(
-                    'OPTIFLOW OU\nOXYGÉNOTHÉRAPIE\nÀ HAUT\nDÉBIT',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
                   ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade900,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade900,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     minimumSize: Size(180, 180),
                   ),
                 ),
-
+                ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => OptiflowView()),
+                    );
+                  },
+                  icon: Icon(Icons.medical_services), // Ajout de l'icône
+                  label: const Center(
+                    child: Text(
+                      'OPTIFLOW OU\nOXYGÉNOTHÉRAPIE\nÀ HAUT\nDÉBIT',
+                      style: TextStyle(fontSize: 15),
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade900,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    minimumSize: Size(180, 180),
+                  ),
+                ),
                 ElevatedButton.icon(
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => PrelSangView()),
                     );
-
-
                   },
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'PRÉLÈVEMENT\nSANGUIN',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade900,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade900,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
@@ -458,15 +490,15 @@ class _SoignantViewState extends State<SoignantView> {
                       context,
                       MaterialPageRoute(builder: (context) => VoieVeinView()),
                     );
-
-
                   },
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'VOIE VEINEUSE\nCENTRALEOU KTC',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade800,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade800,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
@@ -486,7 +518,8 @@ class _SoignantViewState extends State<SoignantView> {
                     style: TextStyle(fontSize: 15),
                   ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade700,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade700,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
@@ -512,7 +545,8 @@ class _SoignantViewState extends State<SoignantView> {
                     style: TextStyle(fontSize: 15),
                   ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade600,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade600,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
@@ -523,22 +557,24 @@ class _SoignantViewState extends State<SoignantView> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => EcouvNaRectView()),
+                      MaterialPageRoute(
+                          builder: (context) => EcouvNaRectView()),
                     );
                   },
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'ÉCOUVILLON\nNASAL\nOU RECTAL ',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade400,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade400,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     minimumSize: Size(180, 180),
                   ),
                 ),
-
                 ElevatedButton.icon(
                   onPressed: () {
                     Navigator.push(
@@ -549,30 +585,32 @@ class _SoignantViewState extends State<SoignantView> {
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     ' GLYCÉMIE\nCAPILAIRE',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade400,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade400,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     minimumSize: Size(180, 180),
                   ),
                 ),
-
                 ElevatedButton.icon(
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => PensEscView()),
                     );
-
                   },
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'PANSEMENT\nESCARRE',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade400,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade400,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
@@ -589,16 +627,17 @@ class _SoignantViewState extends State<SoignantView> {
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'VAC thérapie',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade400,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade400,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     minimumSize: Size(180, 180),
                   ),
                 ),
-
                 ElevatedButton.icon(
                   onPressed: () {
                     Navigator.push(
@@ -609,9 +648,11 @@ class _SoignantViewState extends State<SoignantView> {
                   icon: Icon(Icons.medical_services), // Ajout de l'icône
                   label: Text(
                     'SONDE \n NASOGASTRIQUE',
-                    style: TextStyle(fontSize: 15),),
+                    style: TextStyle(fontSize: 15),
+                  ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: Colors.green.shade400,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.green.shade400,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
@@ -626,4 +667,3 @@ class _SoignantViewState extends State<SoignantView> {
     );
   }
 }
-

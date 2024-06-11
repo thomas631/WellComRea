@@ -1,5 +1,3 @@
-
-
 class HospitalData {
   final String imagePath;
   final String welcomeMessage;

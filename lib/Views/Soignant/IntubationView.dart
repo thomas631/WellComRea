@@ -6,7 +6,7 @@ class IntubationView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('INTUBATION'),
+          child: Text('INTUBATION'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,8 +44,10 @@ class IntubationView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S1.jpg', height: 200, width: 200),
-                      Image.asset('images/Soignant/S2.png', height: 200, width: 200),
+                      Image.asset('images/Soignant/S1.jpg',
+                          height: 200, width: 200),
+                      Image.asset('images/Soignant/S2.png',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],
@@ -120,7 +122,6 @@ class IntubationView extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );

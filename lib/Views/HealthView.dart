@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:well_com_rea/Controllers/patient_controller.dart';
 
-
 class HealthView extends StatelessWidget {
-
-
   HealthView({Key? key}) : super(key: key);
-
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        foregroundColor: Colors.white,
         title: const Center(
           child: Text('HYGIENE'),
         ),
@@ -238,6 +235,7 @@ class HealthView extends StatelessWidget {
       ),
     );
   }
+
   // Fonction pour créer une barre verticale
   Widget horizontalBar() {
     return Container(
@@ -247,10 +245,7 @@ class HealthView extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 10), // Ajout de marge verticale
     );
   }
-
 }
-
-
 
 class ImageWithText extends StatelessWidget {
   final String imagePath;
@@ -258,13 +253,11 @@ class ImageWithText extends StatelessWidget {
   final double height;
   final String labelText;
 
-
   ImageWithText({
     required this.imagePath,
     required this.width,
     required this.height,
     required this.labelText,
-
   });
 
   @override
@@ -288,13 +281,11 @@ class RoundedImageWidget extends StatefulWidget {
   final double height;
   final String labelText;
 
-
   RoundedImageWidget({
     required this.imagePath,
     this.width = 50,
     this.height = 50,
     required this.labelText,
-
   });
 
   @override
@@ -331,8 +322,6 @@ class _RoundedImageWidgetState extends State<RoundedImageWidget> {
           print('Erreur lors de l\'enregistrement du besoin dans la base de données: $error');
         }*/
       },
-
-
       child: Container(
         margin: EdgeInsets.all(8.0), // Ajout de la marge autour de l'image
         decoration: BoxDecoration(

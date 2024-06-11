@@ -6,7 +6,7 @@ class RadioView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('RADIOLOGIE'),
+          child: Text('RADIOLOGIE'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,8 +44,10 @@ class RadioView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S23.jpg', height: 200, width: 200),
-                      Image.asset('images/Soignant/S22.png', height: 200, width: 200),
+                      Image.asset('images/Soignant/S23.jpg',
+                          height: 200, width: 200),
+                      Image.asset('images/Soignant/S22.png',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],
@@ -120,7 +122,6 @@ class RadioView extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );

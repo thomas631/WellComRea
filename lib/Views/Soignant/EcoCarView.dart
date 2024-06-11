@@ -6,7 +6,7 @@ class EcoCarView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child : Text('ECHOGRAPHIE CARDIAQUE'),
+          child: Text('ECHOGRAPHIE CARDIAQUE'),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
@@ -44,8 +44,10 @@ class EcoCarView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('images/Soignant/S19.png', height: 200, width: 200),
-                      Image.asset('images/Soignant/S21.jpg', height: 200, width: 200),
+                      Image.asset('images/Soignant/S19.png',
+                          height: 200, width: 200),
+                      Image.asset('images/Soignant/S21.jpg',
+                          height: 200, width: 200),
                     ],
                   ),
                 ],
@@ -121,7 +123,6 @@ class EcoCarView extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );
