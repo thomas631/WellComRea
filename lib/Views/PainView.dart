@@ -12,12 +12,15 @@ class PainView extends StatelessWidget {
       appBar: AppBar(
         foregroundColor: Colors.white,
         title: const Center(
-          child: Text('DOULEURS' ,style: TextStyle(fontSize: 15),),
+          child: Text(
+            'DOULEURS',
+            style: TextStyle(fontSize: 15),
+          ),
         ),
         backgroundColor: Colors.green.shade900,
         actions: [
           IconButton(
-            icon: Icon(Icons.mic),
+            icon: const Icon(Icons.mic),
             onPressed: () {
               // Ajoutez le code pour accéder au microphone ici
             },
@@ -32,13 +35,13 @@ class PainView extends StatelessWidget {
             children: [
               // Bande verte avec la question "Avez-vous mal?"
               Container(
-                margin: EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   color: Colors.green.shade900,
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
+                child: const Padding(
+                  padding:  EdgeInsets.all(10.0),
                   child: Column(
                     children: [
                       Text(
@@ -161,93 +164,93 @@ class PainView extends StatelessWidget {
                   ),
                 ),
               ),
-              FittedBox(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    children: [
-                      // Image en haut de ManDoul
-                      ImageWidget(
-                          imagePath: 'images/Pain/P1.jpg',
-                          height: 100,
-                          width: 100),
-                      Text(
-                        'J\'ai de piqûres',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
+              SizedBox(
+                height: 500,
+                child: FittedBox(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                        // Image en haut de ManDoul
+                        ImageWidget(
+                            imagePath: 'images/Pain/P1.jpg',
+                            height: 100,
+                            width: 100),
+                        const Text(
+                          'J\'ai de piqûres',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
 
-                      // Image ManDoul au centre
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          // Image à gauche de ManDoul
-                          Column(
-                            children: [
-                              ImageWidget(
-                                  imagePath: 'images/Pain/P2.png',
-                                  height: 200,
-                                  width: 100),
-                              Text(
-                                'Oppression / Qui serre',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              ImageWidget(
-                                  imagePath: 'images/Pain/P3.jpg',
-                                  height: 200,
-                                  width: 100),
-                              Text(
-                                'J\'ai des démangeaisons',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                          // Image ManDoul
-                          Image.asset('images/Pain/ManDoul.jpg',
-                              height: 200, width: 300),
-                          // Image à droite de ManDoul
-                          Column(
-                            children: [
-                              ImageWidget(
-                                  imagePath: 'images/Pain/P4.png',
-                                  height: 200,
-                                  width: 100),
-                              Text(
-                                'J\'ai des fourmillements',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              ImageWidget(
-                                  imagePath: 'images/Pain/P5.jpg',
-                                  height: 200,
-                                  width: 100),
-                              Text(
-                                'J\'ai des brûlures',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      // Image en bas de ManDoul
-                      ImageWidget(
-                          imagePath: 'images/Pain/P6.png',
-                          height: 100,
-                          width: 100),
-                      Text(
-                        'Comme des coups de poignard',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                    ],
+                        // Image ManDoul au centre
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            // Image à gauche de ManDoul
+                            Column(
+                              children: [
+                                ImageWidget(
+                                    imagePath: 'images/Pain/P2.png',
+                                    height: 200,
+                                    width: 100),
+                                const Text(
+                                  'Oppression / Qui serre',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                ImageWidget(
+                                    imagePath: 'images/Pain/P3.jpg',
+                                    height: 200,
+                                    width: 100),
+                               const Text(
+                                  'J\'ai des démangeaisons',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                              ],
+                            ),
+                           const  SizedBox(width: 300, height: 300,),
+                            Column(
+                              children: [
+                                ImageWidget(
+                                    imagePath: 'images/Pain/P4.png',
+                                    height: 200,
+                                    width: 100),
+                                const Text(
+                                  'J\'ai des fourmillements',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                ImageWidget(
+                                    imagePath: 'images/Pain/P5.jpg',
+                                    height: 200,
+                                    width: 100),
+                                const Text(
+                                  'J\'ai des brûlures',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        // Image en bas de ManDoul
+                        ImageWidget(
+                            imagePath: 'images/Pain/P6.png',
+                            height: 100,
+                            width: 100),
+                        const Text(
+                          'Comme des coups de poignard',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   color: Colors.green.shade900,
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
+                child: const Padding(
+                  padding:  EdgeInsets.all(10.0),
                   child: Column(
                     children: [
                       Text(
